@@ -11,7 +11,7 @@ bot = telebot.TeleBot(config.TOKEN)
 def welcome(message):
     keyboard = telebot.types.ReplyKeyboardMarkup(True)
     keyboard.row('💰 Balance', '💵 Withdraw','➕ Deposit')
-    keyboard.row('👨‍👦‍👦 Support','💬 Help')
+    keyboard.row('🏷 Add Wallet','👨‍👦‍👦 Support','💬 Help')
     bot.send_message(message.chat.id, 'Hello! You have won '+config.start_balance+' '+config.currency, reply_markup=keyboard)
 
 
@@ -32,10 +32,12 @@ def lalala(message):
   elif (message.text == '➕ Deposit'):
     bot.send_message(message.chat.id, 'To deposit please send money in '+config.currency+' to '+config.wallet)
 
+  elif (message.text == '🏷 Add Wallet'):
+    bot.send_message(message.chat.id, 'You can add walllet only after first deposit')
   else:
     u = "Don't understand you. Your message was: "+str(message.text)
     bot.send_message(message.chat.id, u)
-try:    
+try:
   bot.polling(none_stop=True)
   pass
 except:

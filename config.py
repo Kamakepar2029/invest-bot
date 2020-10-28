@@ -1,15 +1,15 @@
-TOKEN = "1366991883:AAFRKpr_HWHY7Klp9B-N4q5Ho9t1buNQQck" #Token
+TOKEN = "1033283433:AAHR6w-CTPBl-voBcuENL8--GSJIReMGWKk" #Token
 
-wallet="" #Wallet for you
+wallet = "XtLg6kvzAQN8NPad6J3dYTWUxKNpsApn3U" #Wallet for you
 
 lang = "us" #ru or us
 
-welcome_message = "Hello."
+welcome_message = "Hello. This bot can give you money. It is a giveaway."
 
-currency = 'LTC'
+currency = 'DASH'
 
-start_balance = '1.432345600'
+start_balance = '0.95204030'
 
-withdraw = '0.0100000000'
+withdraw = '0.01000000'
 
-help_bots = '@'
+help_bots = '@help_dash_bot'
